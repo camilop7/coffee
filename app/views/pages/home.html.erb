@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Concierge</title>
   <link rel="stylesheet" href="styles.css">
+  <%= favicon_link_tag "favicon.png", rel: "icon", type: "image/png" %>
 </head>
 
 <body>
@@ -22,26 +23,30 @@
 
   <div class="main-card">
     <div class="small-card">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg" alt="Card Image">
-      <p class="card-text">Text for Card 1</p>
-      <button class="card-button">Button 1</button>
+      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694979035/IMG_5193_t55fry.jpg" alt="Card Image">
+      <p class="card-text">Our favourite shops, and some barista thoughts</p>
+      <button class="card-button">Shops</button>
+    </div>
+    <div class="small-card">
+      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694980288/Kawa_zrckqf.png" alt="Card Image">
+      <p class="card-text">The best roasters</p>
+      <button class="card-button">Coffee</button>
     </div>
     <div class="small-card">
       <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg" alt="Card Image">
-      <p class="card-text">Text for Card 2</p>
-      <button class="card-button">Button 2</button>
-    </div>
-    <div class="small-card">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg" alt="Card Image">
-      <p class="card-text">Text for Card 3</p>
-      <button class="card-button">Button 3</button>
+      <p class="card-text">The farmers & their land</p>
+      <button class="card-button">Map</button>
     </div>
   </div>
 
   <div class="card-container">
     <div class="card card-left">
-      <h2 class="card-title">News feed - All About the industry</h2>
-      <p class="card-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2 class="card-title">All About the industry, latest news and upcoming events in the coffee industry</h2>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search...">
+    <%# <button onclick="searchNews()">Search</button> %>
+    </div>
+    <div id="resultsContainer" class="results-container" style="display:none;"></div>
     </div>
 
     <div class="card card-right">
@@ -80,9 +85,9 @@
 
   <footer class="footer">
     <div class="social-icons">
-      <img src="instagram-icon.png" alt="Instagram Icon">
-      <img src="facebook-icon.png" alt="Facebook Icon">
-      <img src="youtube-icon.png" alt="YouTube Icon">
+      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694982969/instagram_fkr0xf.svg" alt="Instagram Icon">
+      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694983048/youtube_ainyld.svg" alt="YouTube Icon">
+      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694983101/whatsapp_gu9t28.svg" alt="Whatsapp Icon">
     </div>
   </footer>
 

@@ -15,7 +15,7 @@
  */
 
  body {
-  background-color: #adaaaa;
+  background-color: #ffffff;
 }
 
 .navbar {
@@ -27,8 +27,8 @@
   left: 0;
   right: 0;
   z-index: 1;
-  padding-bottom: 16px;
-  padding-top: 16px
+  padding-bottom: 18px;
+  padding-top: 18px
 }
 
 .navbar ul {
@@ -107,51 +107,76 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 24px;
   margin-right: 24px;
-}
+  background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1694979775/painauc_y6vjyt.jpg'); /* Replace 'your-background-image-url.jpg' with the actual URL of your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  }
 
-.card:hover .card-paragraph {
+  .search-container {
+    margin-bottom: 12px;
+  }
+
+  .results-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .news-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 0 12px;
+    padding: 8px;
+  }
+
+  .card:hover .card-paragraph {
   display: block;
-}
+  }
 
-.card-title {
+  .card-title {
   font-size: 36px;
   padding-bottom: 12px;
   padding-top: 12px;
   transition: font-size 0.3s ease;
-}
+  }
 
-.card-paragraph {
+  .card-paragraph {
   font-size: 18px;
   text-align: justify;
   display: none;
   margin-left: 18px;
   margin-right: 18px;
-}
+  }
 
-.main-card {
+  .main-card {
   display: flex;
   justify-content: space-between;
   margin-top: 84px;
   margin-left: 34px;
   margin-right: 34px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+  }
 
-.small-card {
+  .small-card {
   width: 30%;
   margin: 24px;
   padding: 16px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
+  }
 
-.small-card img {
-  width: 100%;
-  border-radius: 5px 5px 0 0;
-}
+  .small-card img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  }
 
-.card-text {
+  .card-text {
   font-size: 16px;
   text-align: left;
   text-align: justify;
@@ -159,9 +184,9 @@
   margin-top: 12px;
   margin-left: 8px;
   margin-right: 8px;
-}
+  }
 
-.card-button {
+  .card-button {
   font-size: 16px;
   text-align: right;
   float: right;
@@ -171,9 +196,9 @@
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
-}
+  }
 
-.carousel-container {
+  .carousel-container {
   width: 480px;
   height: 480px;
   position: relative;
@@ -182,46 +207,46 @@
   margin-top: 12px;
   margin-left: 34px;
   margin-right: 34px;
-}
+  }
 
-.carousel-track {
+  .carousel-track {
   display: flex;
-}
+  }
 
-.carousel-slide {
+  .carousel-slide {
   flex: 0 0 480px;
   padding: 20px;
   text-align: center;
-}
+  }
 
-.carousel-slide img {
+  .carousel-slide img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-}
+  }
 
-.profile-name a {
+  .profile-name a {
   text-decoration: none;
   color: #333;
-}
+  }
 
-.skills {
+  .skills {
   list-style: none;
   padding: 0;
-}
+  }
 
-.skills li {
+  .skills li {
   margin-bottom: 8px;
-}
+  }
 
-.carousel-slicer {
+  .carousel-slicer {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-}
+  }
 
-.carousel-slicer button {
+  .carousel-slicer button {
   margin: 0 5px;
   padding: 8px 16px;
   font-size: 16px;
@@ -233,11 +258,12 @@
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
-}
+  }
 
-.footer {
+  .footer {
   background-image: linear-gradient(to right, #4b2c20, #d3a180);
-  padding-top: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -246,9 +272,9 @@
   justify-content: center;
   align-items: center;
   height: 24px;
-}
+  }
 
-.social-icons img {
+  .social-icons img {
   width: 30px; /* Adjust size as needed */
   margin: 0 10px; /* Adjust spacing between icons */
-}
+  }

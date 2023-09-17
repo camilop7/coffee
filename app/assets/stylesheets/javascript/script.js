@@ -29,3 +29,36 @@
 // setInterval(() => {
 //   plusSlides(1);
 // }, 2000);
+
+
+// fundation for search news funciton JS
+
+{/* <script> */}
+
+  {/* function searchNews() {
+    var searchTerm = document.getElementById("searchInput").value;
+    var apiKey = 'YOUR_API_KEY'; // Replace with your actual API key */}
+
+    // Perform API request using 'searchTerm' and 'apiKey'
+
+    // Display results in 'resultsContainer'
+    // var resultsContainer = document.getElementById("resultsContainer");
+    // resultsContainer.innerHTML = ''; // Clear previous results
+
+    // Loop through API results and create elements for each news item
+    // Example:
+    // for (var i = 0; i < apiResults.length; i++) {
+    //   var newsItem = apiResults[i];
+    //   var newsHeader = newsItem.header;
+    //   var newsSource = newsItem.source;
+
+    //   var newsElement = document.createElement("div");
+    //   newsElement.classList.add("news-item");
+    //   newsElement.innerHTML = "<h3>" + newsHeader + "</h3><p>" + newsSource + "</p>";
+
+    //   resultsContainer.appendChild(newsElement);
+    // }
+
+//     resultsContainer.style.display = "block"; // Show results container
+//   }
+// </script>
