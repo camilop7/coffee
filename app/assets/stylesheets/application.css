@@ -15,205 +15,190 @@
  */
 
  body {
-  /* background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg'); */
   background-color: #adaaaa;
 }
 
 .navbar {
-  background-color: #f0f0f0;
-  color: #838080;
-  padding: 8px 8px;
-  font-weight: lighter;
-  font-size: small;
-  position: -webkit-sticky;
-  position: sticky;
+  background-image: linear-gradient(to right, #4b291c, #d3a180);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px 16px;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding-bottom: 16px;
+  padding-top: 16px
+}
+
+.navbar ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: lighter;
+  margin: 0;
+  flex: 1; /* Allow it to take up remaining space */
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links li {
+  margin: 0 8px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.navmenu {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.navmenu:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc;
 }
 
 
-  .title{
-    color: rgb(0, 0, 0);
-    text-align: left;
-    display: inline-flex;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    font-weight: lighter;
-    padding-right: 900px;
-    margin-right: 34px;
-  }
-
-  .navbar ul {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 24px; /* 84px margin to the left */
-    margin-right: 84px;
-    padding: 0;
-  }
-
-  .navbar li {
-    display: inline-block;
-    margin-right: 20px; /* Adjust margin between links as needed */
-  }
-
-  .navbar a {
-    text-decoration: none;
-    color: inherit; /* Inherit text color from parent (black) */
-    font-size: 16px; /* Adjust font size as needed */
-    font-weight: bold; /* Optionally make the text bold */
-  }
-
-  .navbar a:hover {
-    text-decoration: underline; /* Underline on hover (optional) */
-  }
-
-.legend {
-    display: inline-block;
-    background-color: #fff; /* Default background color */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
-    font-family: "Times New Roman", serif;
-    font-weight: lighter;
-    margin-left: 32px;
-    font-size: 22px;
-    cursor: pointer;
-    transition: background-color 0.3s, font-size 0.3s; /* Transition animation */
+.card-container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px;
+  text-align: center;
 }
 
-  .legend:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
-  }
-
-  .legend:hover .legend-text {
-    display: block; /* Display text on hover */
-  }
-
-  .flex1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 36px 72px;
-    background-image: "https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg"; alt: "card1pic";
-  }
-
-  .card-text {
-    background-color: rgba(240, 240, 240, 0.8); /* Light grey background for text */
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-  }
-
-  .card-title {
-    font-size: 24px;
-    font-weight: lighter; /* Light font */
-    margin: 0;
-    margin-bottom: 10px; /* Spacing between title and image */
-  }
-
-  .card-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light box shadow */
-  }
-
-  .card-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 36px;
-  }
-
-  .card {
-    width: 640px;
-    height: 360px;
-    margin-top: 56px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 8px;
-  }
-
-  .card-left {
-    background-color: #f0f0f0;
-    text-align: center;
-  }
-
-  .card-title {
-    font-size: 36px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-  }
-
-  .card-paragraph {
-    font-size: 18px;
-    text-align: justify;
-
-  }
-
-  .card-right {
-    background-color: #f9f9f9;
-  }
-
-  .carousel {
-    /* Add your carousel styles here */
-  }
-
-  .card-text {
-    font-size: 18px;
-    text-align: justify;
-  }
-
-  .card-button {
-    float: right;
-    font-size: 16px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: coral;
-    text-decoration: solid;
-  }
-
-  .main-card {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light box shadow */
+.card {
+  width: 45%;
+  height: 360px;
+  margin-top: 56px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
 }
 
-/* Small card */
+.card:hover .card-paragraph {
+  display: block;
+}
+
+.card-title {
+  font-size: 36px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  transition: font-size 0.3s ease;
+}
+
+.card-paragraph {
+  font-size: 18px;
+  text-align: justify;
+  display: none;
+}
+
+.main-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 84px;
+  margin-left: 34px;
+  margin-right: 34px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .small-card {
-    width: 380px;
-    margin: 24px;
-    padding: 16px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: 24px;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* Card image */
 .small-card img {
-    width: 100%;
-    border-radius: 5px 5px 0 0; /* Rounded top corners */
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
-/* Card text */
 .card-text {
-    font-size: 16px;
-    text-align: left;
-    margin: 12px 0;
+  font-size: 16px;
+  text-align: left;
+  text-align: justify;
+  margin: 12px 0;
+  margin-top: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
-/* Card button */
 .card-button {
-    font-size: 16px;
-    text-align: right;
-    float: right;
-    border: none;
-    background-color: #0078d4;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 16px;
+  text-align: right;
+  float: right;
+  border: none;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.card-button:hover {
-    background-color: #005a9e;
+.flex1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 36px 72px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: 480px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-image: linear-gradient(to right, #4b2c20, #d3a180);
+  padding-top: 18px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px; /* Adjust as needed */
+}
+
+.social-icons img {
+  width: 30px; /* Adjust size as needed */
+  margin: 0 10px; /* Adjust spacing between icons */
 }
