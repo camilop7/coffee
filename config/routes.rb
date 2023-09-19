@@ -8,6 +8,11 @@ Rails.application.routes.draw do
     root to: "pages#home"
     get 'about', to: 'pages#about'
     get 'contact', to: 'pages#contact'
+    get 'about', to: 'pages#about'
+    get 'link_to_shops', to: 'shops#index'
+    get 'link_to_roasters', to: 'roasters#index'
+    get 'link_to_farmers', to: 'farmers#index'
+
   end
 
 end

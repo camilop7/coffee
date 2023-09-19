@@ -11,6 +11,8 @@
 
 <body>
 
+  <div class="background"></div>
+
   <nav class="navbar">
     <ul class="links">
       <h1 class="title">Coffee Concierge</h1>
@@ -25,26 +27,26 @@
     <div class="small-card">
       <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694979035/IMG_5193_t55fry.jpg" alt="Card Image">
       <p class="card-text">Our favourite shops, and some barista thoughts</p>
-      <button class="card-button">Shops</button>
+      <a href="link_to_shops" class="card-button">Shops</a>
     </div>
     <div class="small-card">
       <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694980288/Kawa_zrckqf.png" alt="Card Image">
       <p class="card-text">The best roasters</p>
-      <button class="card-button">Coffee</button>
+      <a href="link_to_roasters" class="card-button">Roasters</a>
     </div>
     <div class="small-card">
       <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg" alt="Card Image">
       <p class="card-text">The farmers & their land</p>
-      <button class="card-button">Map</button>
+      <a href="link_to_farmers" class="card-button">Farmers</a>
     </div>
-  </div>
+    </div>
 
-  <div class="card-container">
-    <div class="card card-left">
-      <h2 class="card-title">All About the industry, latest news and upcoming events in the coffee industry</h2>
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search...">
-    <%# <button onclick="searchNews()">Search</button> %>
+    <div class="card-container">
+      <div class="card card-left">
+        <h2 class="card-title">All About the industry, latest news and upcoming events in the coffee industry</h2>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <%# <button onclick="searchNews()">Search</button> %>
     </div>
     <div id="resultsContainer" class="results-container" style="display:none;"></div>
     </div>
@@ -53,43 +55,46 @@
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <button class="card-button">Click Me</button>
     </div>
-  </div>
-
-  <div class="carousel-container">
-  <div class="carousel-track">
-    <div class="carousel-slide">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1679054058/production/icvnqwxt9atb460kevd272j9c8kj.png" alt="Profile 1">
-      <h2 class="profile-name"><a href="profile1.html">John Doe</a></h2>
-      <ul class="skills">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-      </ul>
     </div>
-  </div>
-  <div class="carousel-slicer">
-    <button onclick="prevSlide()">Previous</button>
-    <button onclick="nextSlide()">Next</button>
-  </div>
-  </div>
 
-  <article>
-    <h2 class="newspaper">London's coffee culture by Us</h2>
-    <img src="#" alt="London1"> <!-- Add the path to your image here -->
-  </article>
-
-  <article>
-    <h2 class="devotion">Devotion</h2>
-    <img src="#" alt="Devotion1"> <!-- Add the path to your image here -->
-  </article>
-
-  <footer class="footer">
-    <div class="social-icons">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694982969/instagram_fkr0xf.svg" alt="Instagram Icon">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694983048/youtube_ainyld.svg" alt="YouTube Icon">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694983101/whatsapp_gu9t28.svg" alt="Whatsapp Icon">
+    <div class="carousel-card">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Add your carousel slides here -->
+          <div class="carousel-slide">
+          <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694979006/IMG_5108_hk5pvo.jpg" alt="Carousel Image 1">
+          <h2 class="carousel-title">Slide 1</h2>
+          </div>
+          <div class="carousel-slide">
+          <img src="carousel_image_2.jpg" alt="Carousel Image 2">
+          <h2 class="carousel-title">Slide 2</h2>
+        </div>
+        <!-- Add more slides as needed -->
+        </div>
+        <div class="carousel-slicer">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+      </div>
+      </div>
     </div>
-  </footer>
+
+    <article>
+      <h2 class="newspaper">London's coffee culture by Us</h2>
+      <img src="#" alt="London1"> <!-- Add the path to your image here -->
+    </article>
+
+    <article>
+      <h2 class="devotion">Devotion</h2>
+      <img src="#" alt="Devotion1"> <!-- Add the path to your image here -->
+    </article>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694982969/instagram_fkr0xf.svg" alt="Instagram Icon">
+        <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694983048/youtube_ainyld.svg" alt="YouTube Icon">
+        <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694983101/whatsapp_gu9t28.svg" alt="Whatsapp Icon">
+      </div>
+    </footer>
 
 </body>
 
