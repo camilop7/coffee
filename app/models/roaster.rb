@@ -1,2 +1,2 @@
-class Roaster< ApplicationRecord
+class Roaster < ApplicationRecord
 end
