@@ -7,8 +7,6 @@
   <title>Coffee Concierge</title>
   <link rel="stylesheet" href="styles.css">
   <%= favicon_link_tag "favicon.png", rel: "icon", type: "image/png" %>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -54,32 +52,35 @@
     </div>
 
     <div class="card card-right">
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
       <button class="card-button">Click Me</button>
     </div>
     </div>
 
     <div class="carousel-card">
-      <div class="carousel-container">
-        <div class="carousel-track">
-          <!-- Add your carousel slides here -->
-          <div class="carousel-slide">
-          <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694979006/IMG_5108_hk5pvo.jpg" alt="Carousel Image 1">
-          <h2 class="carousel-title">Slide 1</h2>
-          </div>
-          <div class="carousel-slide">
-          <img src="carousel_image_2.jpg" alt="Carousel Image 2">
-          <h2 class="carousel-title">Slide 2</h2>
-        </div>
-        <!-- Add more slides as needed -->
-        </div>
-        <div class="carousel-slicer">
-        <button onclick="prevSlide()">Previous</button>
-        <button onclick="nextSlide()">Next</button>
-      </div>
+    <div class="carousel-container">
+    <div class="carousel-track">
+    <div class="carousel-slide">
+    <video controls>
+        <source src="https://res.cloudinary.com/difj9msh3/video/upload/v1695423809/1b9727b83c32430da8ff6b687a00a7b2_dqwpoh.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    <div class="carousel-slide">
+      <video controls>
+        <source src="https://res.cloudinary.com/difj9msh3/video/upload/v1695423809/1b9727b83c32430da8ff6b687a00a7b2_dqwpoh.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <h2 class="carousel-title">Video 1</h2>
       </div>
     </div>
+    <div class="carousel-slicer">
+      <button onclick="prevSlide()">Previous</button>
+      <button onclick="nextSlide()">Next</button>
+      </div>
+    </div>
+  </div>
 
+<%#
     <article>
       <h2 class="newspaper">London's coffee culture by Us</h2>
       <img src="#" alt="London1"> <!-- Add the path to your image here -->
@@ -88,7 +89,7 @@
     <article>
       <h2 class="devotion">Devotion</h2>
       <img src="#" alt="Devotion1"> <!-- Add the path to your image here -->
-    </article>
+    </article> %>
 
     <footer class="footer">
       <div class="social-icons">
