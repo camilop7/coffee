@@ -121,10 +121,20 @@
   display: block;
   }
 
+  .card-container{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 48px;
+    margin-left: 34px;
+    margin-left: 34px;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+  }
+
   .card-title {
   font-size: 36px;
-  padding-bottom: 12px;
-  padding-top: 12px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   transition: font-size 0.3s ease;
   }
 
@@ -138,8 +148,8 @@
 
   .main-card {
   display: flex;
-  justify-content: space-between;
-  margin-top: 84px;
+  justify-content: center;
+  margin-top: 48px;
   margin-left: 34px;
   margin-right: 34px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -183,67 +193,75 @@
   cursor: pointer;
   }
 
+  .carousel-card{
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
   .carousel-container {
-  width: 480px;
-  height: 480px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 48px;
-  margin-left: 48px;
-  margin-right: 48px;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin-top: 36px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
 
   .carousel-track {
-  display: flex;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
   }
 
   .carousel-slide {
-  flex: 0 0 480px;
-  padding: 20px;
-  text-align: center;
+    min-width: 100%;
+    flex: 0 0 580px; /* Adjust as needed */
+    box-sizing: border-box;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    margin-top: 48px;
+
   }
 
-  .carousel-slide img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  .carousel-slide img,
+  .carousel-slide video {
+    max-width: 100%;
+    max-height: 480px; /* Adjust as needed */
+    border-radius: 5px;
+    margin-bottom: 18px;
   }
 
-  .profile-name a {
-  text-decoration: none;
-  color: #333;
-  }
-
-  .skills {
-  list-style: none;
-  padding: 0;
-  }
-
-  .skills li {
-  margin-bottom: 8px;
+  .carousel-title {
+    font-size: 1.5em;
+    margin: 0;
   }
 
   .carousel-slicer {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .carousel-slicer button {
-  margin: 0 5px;
-  padding: 8px 16px;
-  font-size: 16px;
-  border-radius: 5px;
-  text-align: right;
-  float: right;
-  border: none;
-  background-color: #0078d4;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
   }
+
+  .carousel-slicer button:hover {
+    background: #f0f0f0;
+  }
+
 
   .footer {
   background-image: linear-gradient(to right, #4b2c20, #d3a180);
@@ -379,9 +397,10 @@
     position: relative;
     top: 8px;
     left: 8px;
-    background: #535050;
+    background: #d26908;
     color: #fff;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    margin-bottom: 12px;
   }
