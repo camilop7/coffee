@@ -62,3 +62,16 @@
 //     resultsContainer.style.display = "block"; // Show results container
 //   }
 // </script>
+
+// $(document).ready(function() {
+//   $('.card').hover(
+//     function() {
+//       $(this).addClass('enlarged');
+//       $(this).siblings('.card').addClass('miniature');
+//     },
+//     function() {
+//       $(this).removeClass('enlarged');
+//       $(this).siblings('.card').removeClass('miniature');
+//     }
+//   );
+// });
