@@ -75,59 +75,29 @@
   font-size: 16px;
 }
 
-.navmenu {
-  position: relative;
-  margin-right: 34px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #000000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 160px;
-  z-index: 1;
-}
-
-.navmenu:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  color: #000;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ccc;
-}
-
 .card-container {
   margin-top: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 12px 12px;
   text-align: center;
   position: relative;
+  padding: 36px;
+  width: 1200px;
 }
 
 .card {
-  width: 45%;
+  width: 65%;
   height: 360px;
   margin-top: 56px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 24px;
-  margin-right: 24px;
   background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1694979775/painauc_y6vjyt.jpg'); /* Replace 'your-background-image-url.jpg' with the actual URL of your background image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px;
+  padding: 36px;
   color: white;
-  opacity: 0.9; /* Adjust the opacity as needed */
   }
 
   .search-container {
@@ -173,6 +143,7 @@
   margin-left: 34px;
   margin-right: 34px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 36px;
   }
 
   .small-card {
@@ -364,15 +335,21 @@
     background: rgba(255, 255, 255, 0.8);
   }
 
+  .container{
+    margin-top: 72px;
+    margin-left: 72px;
+    margin-right: 72px;
+    align-items: justify;
+  }
   .card {
     position: relative;
     width: 320px;
     height: 320px;
     display: inline-block;
     margin: 10px;
-    overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 5px;
+    overflow: hidden;
   }
 
   .card img {
@@ -388,51 +365,23 @@
     width: 100%;
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    text-align: center;
+    align-items: first baseline;
   }
 
   .description {
     background: #d2b48c;
     padding: 5px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .buy-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #333;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    background: #535050;
     color: #fff;
-    border: none;
+    border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
   }
-
-  .buy-button:hover {
-    background: #555;
-  }
-
-  /* Hover effect */
-  .card.enlarged {
-    position: absolute;
-    z-index: 2;
-    width: 640px;
-    height: 640px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .card.miniature {
-    position: absolute;
-    z-index: 1;
-    width: 160px;
-    height: 160px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .card.miniature:nth-child(1) { left: 0; top: 0; }
-  .card.miniature:nth-child(2) { left: 340px; top: 0; }
-  .card.miniature:nth-child(3) { left: 680px; top: 0; }
-  .card.miniature:nth-child(4) { left: 0; top: 340px; }
-  .card.miniature:nth-child(5) { left: 340px; top: 340px; }
-  .card.miniature:nth-child(6) { left: 680px; top: 340px; }
