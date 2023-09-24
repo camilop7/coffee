@@ -18,23 +18,21 @@
     </ul>
   </nav>
 
-  <div class="container">
-    <% @farmers.each do |farmer| %>
-      <div class="farmer-card card">
-        <img src="<%= farmer.image_url %>" alt="<%= farmer.name %>">
-        <div class="card-content">
-          <div class="description">
-            <div class="background">
-              <p><%= farmer.name %></p>
-            </div>
+<div class="container">
+  <% @farmers.each do |farmer| %>
+    <div class="farmer-card card">
+      <img src="<%= farmer.image_url %>" alt="<%= farmer.name %>">
+      <div class="card-content">
+        <div class="description">
+          <div class="background">
+            <p><%= farmer.name %></p>
           </div>
-          <button class="buy-button">Buy</button>
         </div>
+        <button class="buy-button">Buy</button>
       </div>
-    <% end %>
-  </div>
-
-
+    </div>
+  <% end %>
+</div>
 
   <footer class="footer">
     <div class="social-icons">

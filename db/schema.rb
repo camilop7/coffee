@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_20_201540) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_24_080212) do
   create_table "farmers", force: :cascade do |t|
     t.string "name"
     t.string "location"
@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_20_201540) do
     t.string "types_of_coffee"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_url"
   end
 
   create_table "roasters", force: :cascade do |t|
@@ -28,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_20_201540) do
     t.float "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_url"
   end
 
   create_table "shops", force: :cascade do |t|
@@ -38,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_20_201540) do
     t.float "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_url"
   end
 
 end
