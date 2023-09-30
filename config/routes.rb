@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get 'link_to_shops', to: 'shops#index'
     get 'link_to_roasters', to: 'roasters#index'
     get 'link_to_farmers', to: 'farmers#index'
+    get 'cards/show_card'
 
   end
 

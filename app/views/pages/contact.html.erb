@@ -8,16 +8,9 @@
 
   <div class="background"></div>
 
-  <nav class="navbar">
-    <ul class="links">
-      <h1 class="title">Coffee Concierge</h1>
-      <li><a href="<%= root_path %>">Home</a></li>
-      <li><a href="<%= about_path %>">About</a></li>
-      <li><a href="<%= contact_path %>">Contact</a></li>
-      <li><a class="navmenu" href="<%= contact_path %>">Menu</a></li>
-    </ul>
-  </nav>
+    <%= render 'shared/navbar' %>
 
+    <%= render 'shared/card' %>
 
     <footer class="footer">
       <div class="social-icons">
