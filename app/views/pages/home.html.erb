@@ -1,95 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee Concierge</title>
   <link rel="stylesheet" href="styles.css">
-  <%= favicon_link_tag "favicon.png", rel: "icon", type: "image/png" %>
 </head>
 
 <body>
 
   <div class="background"></div>
 
-  <nav class="navbar">
-    <ul class="links">
-      <h1 class="title">Coffee Concierge</h1>
-      <li><a href="<%= root_path %>">Home</a></li>
-      <li><a href="<%= about_path %>">About</a></li>
-      <li><a href="<%= contact_path %>">Contact</a></li>
-      <li><a class="navmenu" href="<%= contact_path %>">Menu</a></li>
-    </ul>
-  </nav>
+    <%= render 'shared/navbar' %>
 
-  <div class="main-card">
-    <div class="small-card">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694979035/IMG_5193_t55fry.jpg" alt="Card Image">
-      <p class="card-text">Our favourite shops, and some barista thoughts</p>
-      <a href="link_to_shops" class="card-button">Shops</a>
-    </div>
-    <div class="small-card">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694980288/Kawa_zrckqf.png" alt="Card Image">
-      <p class="card-text">The best roasters</p>
-      <a href="link_to_roasters" class="card-button">Roasters</a>
-    </div>
-    <div class="small-card">
-      <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg" alt="Card Image">
-      <p class="card-text">The farmers & their land</p>
-      <a href="link_to_farmers" class="card-button">Farmers</a>
-    </div>
-    </div>
-
-    <div class="card-container">
-      <div class="card card-left">
-        <h2 class="card-title">All About the industry, latest news and upcoming events in the coffee industry</h2>
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <%# <button onclick="searchNews()">Search</button> %>
-    </div>
-    <div id="resultsContainer" class="results-container" style="display:none;"></div>
-    </div>
-
-    <div class="card card-right">
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-      <button class="card-button">Click Me</button>
-    </div>
-    </div>
-
-    <div class="carousel-card">
-    <div class="carousel-container">
-    <div class="carousel-track">
-    <div class="carousel-slide">
-    <video controls>
-        <source src="https://res.cloudinary.com/difj9msh3/video/upload/v1695423809/1b9727b83c32430da8ff6b687a00a7b2_dqwpoh.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    <div class="carousel-slide">
-      <video controls>
-        <source src="https://res.cloudinary.com/difj9msh3/video/upload/v1695423809/1b9727b83c32430da8ff6b687a00a7b2_dqwpoh.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-        <h2 class="carousel-title">Video 1</h2>
-      </div>
-    </div>
-    <div class="carousel-slicer">
-      <button onclick="prevSlide()">Previous</button>
-      <button onclick="nextSlide()">Next</button>
-      </div>
-    </div>
-  </div>
-
-<%#
-    <article>
-      <h2 class="newspaper">London's coffee culture by Us</h2>
-      <img src="#" alt="London1"> <!-- Add the path to your image here -->
-    </article>
-
-    <article>
-      <h2 class="devotion">Devotion</h2>
-      <img src="#" alt="Devotion1"> <!-- Add the path to your image here -->
-    </article> %>
+    <%= render 'shared/card' %>
 
     <footer class="footer">
       <div class="social-icons">
