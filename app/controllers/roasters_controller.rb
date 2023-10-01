@@ -44,6 +44,7 @@ class RoastersController < ApplicationController
     @roaster = Roaster.find(params[:id])
   end
 
+
   def roaster_params
     params.require(:roaster).permit(:name, :location, :year_established)
   end
