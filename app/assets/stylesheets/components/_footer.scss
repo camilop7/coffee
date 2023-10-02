@@ -1,0 +1,18 @@
+.footer {
+  background-image: linear-gradient(to right, #4b2c20, #d3a180);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  }
+
+  .social-icons img {
+  width: 30px; /* Adjust size as needed */
+  margin: 0 10px; /* Adjust spacing between icons */
+  }
