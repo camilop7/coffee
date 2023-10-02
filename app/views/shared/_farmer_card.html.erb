@@ -1,10 +1,10 @@
 <div class="card-content">
   <div class="left">
-    <% if @shop.present? %>
-      <h3><%= @shop.name %></h3>
-      <p><%= @shop.location %></p>
+    <% if @farmer.present? %>
+      <h3><%= @farmer.name %></h3>
+      <p><%= @farmer.location %></p>
     <% else %>
-      <p>Shop not found.</p>
+      <p>Farmer not found.</p>
     <% end %>
     <button class="card-button">Button</button>
   </div>
