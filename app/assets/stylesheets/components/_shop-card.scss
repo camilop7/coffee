@@ -1,0 +1,43 @@
+.card {
+  margin-top: 74px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1220px;
+  height: 480px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 36px;
+  background-color: #f5f5dc; /* Light Brown */
+
+  .card-container {
+    padding: 36px;
+    display: flex;
+    align-items: center;
+
+    .card-content {
+      display: flex;
+
+      .left {
+        margin-top: 36px;
+        margin-left: 36px;
+      }
+
+      .right {
+        flex: 1;
+        text-align: right;
+      }
+    }
+
+    .card-image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .card-button {
+      background-color: orange;
+      text-align: center;
+      padding: 12px;
+      border-radius: 5px;
+    }
+  }
+}
