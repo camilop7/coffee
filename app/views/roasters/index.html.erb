@@ -2,25 +2,13 @@
 
 <body>
 
-  <div class="background"></div>
-
   <%= render 'shared/navbar' %>
 
-  <div class="container">
-    <% @roasters.each do |roaster| %>
-      <div class="roaster-card card">
-        <img src="<%= roaster.image_url %>" alt="<%= roaster.name %>">
-        <div class="card-content">
-          <div class="description">
-            <div class="background">
-              <p><%= roaster.name %></p>
-            </div>
-          </div>
-          <button class="buy-button">Buy</button>
-        </div>
-      </div>
-    <% end %>
-  </div>
+  <% @roasters.each do |roaster| %>
+  <%= render partial: 'roaster_card', locals: { roaster: roaster } %>
+  <% end %>
+
+
 
   <%= render 'shared/footer' %>
 

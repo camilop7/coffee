@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_01_203120) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_02_093753) do
   create_table "farmers", force: :cascade do |t|
     t.string "name"
     t.string "location"
@@ -30,6 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_01_203120) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_url"
+    t.string "cloudinary_id"
   end
 
   create_table "shops", force: :cascade do |t|
