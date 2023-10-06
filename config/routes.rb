@@ -16,4 +16,8 @@ Rails.application.routes.draw do
 
   end
 
+  resources :roasters
+  resources :shops
+  resources :farmers
+
 end

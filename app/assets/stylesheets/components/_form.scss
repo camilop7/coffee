@@ -1,0 +1,35 @@
+
+.contact-form, .sign-in-form {
+  margin-bottom: 12px; /* Add some space between the forms */
+
+  .form-group {
+    margin-bottom: 12px; /* Add space between form elements */
+  }
+
+  label {
+    font-weight: bold; /* Make labels bold */
+    margin-left: 10px;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 97%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    position: center;
+    margin-left: 12px;
+  }
+
+  textarea {
+    height: 100px; /* Set a fixed height for the textarea */
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 12px;
+  }
+}
