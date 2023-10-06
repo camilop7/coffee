@@ -14,15 +14,19 @@
  *= require_self
  */
 
+@import 'components/navbar';
+@import 'components/roaster-card';
+@import 'components/shop-card';
+@import 'components/farmer-card';
+
 .background {
-  position: fixed;
-  top: 36px;
+  // position: fixed;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  opacity: 0.8;
-  background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1694860163/coffee-bean-medium-roasted-with-leaf-fresh-morning_39768-6561_ttkbvd.jpg');
+  opacity: 0.9;
+  padding-top: 18px;
+  background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1695482480/IMG_0425_xtbfav.heic');
   background-size: cover;
   background-position: center;
 }
