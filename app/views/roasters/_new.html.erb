@@ -1,7 +1,8 @@
 
 <%= simple_form_for @roaster, html: { multipart: true } do |f| %>
-  <%= f.input :title %>
-  <%= f.input :content, as: :text %>
+  <%= f.input :name %>
+  <%= f.input :location %>
+  <%= f.input :year_established %>
   <%= f.input :image_url, as: :file %>
   <%= f.button :submit, class: 'btn btn-primary' %>
 <% end %>

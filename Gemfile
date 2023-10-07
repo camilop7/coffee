@@ -33,9 +33,13 @@ gem "jbuilder"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
+gem 'simple_form'
+
+gem 'bootstrap', '~> 5.1.1'
+
 gem "faker"
 
-gem 'dotenv-rails', groups: [:development, :test]
+gem "dotenv-rails"
 
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]

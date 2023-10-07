@@ -14,19 +14,23 @@
  *= require_self
  */
 
+@import "bootstrap";
+
 @import 'components/navbar';
 @import 'components/roaster-card';
 @import 'components/shop-card';
 @import 'components/farmer-card';
 
 .background {
-  // position: fixed;
+  background: white;
   left: 0;
+  border-radius: 4px;
   width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
   height: 100%;
   opacity: 0.9;
-  padding-top: 18px;
-  background-image: url('https://res.cloudinary.com/difj9msh3/image/upload/v1695482480/IMG_0425_xtbfav.heic');
+  padding: 30px;
+  background-image: '/app/assets/images/background-image.jpeg';
   background-size: cover;
   background-position: center;
 }
