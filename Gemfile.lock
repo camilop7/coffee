@@ -115,6 +115,8 @@ GEM
     faker (3.2.1)
       i18n (>= 1.8.11, < 2)
     ffi (1.16.2)
+    font-awesome-sass (6.4.2)
+      sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     http-accept (1.7.0)
@@ -286,6 +288,7 @@ DEPENDENCIES
   devise (~> 4.9, >= 4.9.2)
   dotenv-rails
   faker
+  font-awesome-sass (~> 6.1)
   importmap-rails
   jbuilder
   puma (~> 5.0)

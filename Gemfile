@@ -37,6 +37,8 @@ gem 'simple_form'
 
 gem 'bootstrap', '~> 5.1.1'
 
+gem "font-awesome-sass", "~> 6.1"
+
 gem "faker"
 
 gem "dotenv-rails"
