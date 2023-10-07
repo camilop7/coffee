@@ -46,6 +46,6 @@ class RoastersController < ApplicationController
 
 
   def roaster_params
-    params.require(:roaster).permit(:name, :location, :year_established)
+    params.require(:roaster).permit(:name, :location, :year_established, :image_url)
   end
 end

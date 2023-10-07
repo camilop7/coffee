@@ -2,13 +2,9 @@
 
 <body>
 
+  <div class="background"></div>
+
   <%= render 'shared/navbar' %>
-
-  <% @roasters.each do |roaster| %>
-  <%= render partial: 'roaster_card', locals: { roaster: roaster } %>
-  <% end %>
-
-
 
   <%= render 'shared/footer' %>
 
