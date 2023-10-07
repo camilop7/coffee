@@ -1,0 +1,38 @@
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin-top: 24px;
+  margin: auto;
+  display: grid;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+img {
+  max-width: 520px;
+  height: auto;
+}
+
+.nav-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}

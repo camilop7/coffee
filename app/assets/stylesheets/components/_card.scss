@@ -1,9 +1,15 @@
+
 .card {
   width: 728px;
-  height: 728px;
+  height: 500px;
   border-radius: 5px;
-  margin: 24px 24px 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  box-sizing: inherit;
+  // grid-auto-flow: row dense;
+  // grid-auto-rows: var(--breakpoint-grid_auto-rows, minmax(min-content,max-content) );
+  // grid-gap: var(--breakpoint-grid_row-gap,0) var(--breakpoint-grid_column-gap,0);
+  // grid-template-columns: var(--breakpoint-grid_column-template, repeat(var(--breakpoint-grid_columns,1),minmax(0,1fr)) );
 
   img {
     width: 100%;
@@ -17,6 +23,7 @@
     background-color: #e6e6e6;
     border-radius: 0 0 5px 5px;
     text-align: center;
+    align-items: baseline;
   }
 
   .description {

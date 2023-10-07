@@ -15,6 +15,7 @@
  */
 
 @import "bootstrap";
+@import "font-awesome";
 
 @import 'components/navbar';
 @import 'components/roaster-card';
@@ -29,8 +30,7 @@
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   height: 100%;
   opacity: 0.9;
-  padding: 30px;
-  background-image: '/app/assets/images/background-image.jpeg';
+  padding: 8px;
   background-size: cover;
   background-position: center;
 }
