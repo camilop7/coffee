@@ -1,9 +1,5 @@
-.navbar + .card {
-  margin-top: 56px;
-}
-
 .navbar {
-  z-index: 1;
+  z-index: -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
