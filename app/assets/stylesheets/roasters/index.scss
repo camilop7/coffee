@@ -1,0 +1,26 @@
+.mb-3{
+  margin-top: 56px;
+}
+
+/* Custom CSS for responsiveness, shadows, and border radius */
+.list-group-item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 24px;
+  transition: transform 0.3s;
+}
+
+.list-group-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive images */
+.list-group-item img {
+  max-width: 100%;
+  height: auto;
+  display: none; /* Initially hide the images */
+}
+
+.list-group-item:hover img {
+  display: block; /* Display images on hover */
+}

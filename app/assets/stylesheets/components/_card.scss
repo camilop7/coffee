@@ -1,12 +1,7 @@
-.big-card {
-  background-color: #f8f9fa; /* Light grey background */
-  border-radius: 5px; /* Border radius for big card */
-  width: 95%; /* Full width */
+.big-card{
+  margin-top: 56px;
+}
 
-  .small-card {
-    margin-bottom: 20px; /* Add some spacing between the small cards */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light box shadow */
-    border-radius: 5px; /* Border radius for small cards */
-    image-rendering: adjust;
-  }
+.card-title a:hover {
+  color: #007bff; /* Change the color on hover to your desired color */
 }

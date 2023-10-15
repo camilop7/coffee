@@ -4,6 +4,28 @@
 
   <%= render 'shared/navbar' %>
 
+  <div class="container">
+    <div class="container mt-4 align-items-start">
+    <div class="row">
+      <div class="row">
+  <div class="col-12 col-lg-4">
+    <%= render 'shared/card' %>
+  </div>
+  <div class="col-12 col-lg-8">
+    <h1 class="mb-3">Roasters</h1>
+    <p class="mb-4">Here is a list of all the roasters we have in our database.</p>
+    <ul class="list-group">
+      <% @roasters.each do |roaster| %>
+        <li class="list-group-item border rounded mb-3">
+          <%= link_to roaster.name, roaster_path(roaster), class: "d-block text-dark text-decoration-none" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  </div>
+
+    </div>
+
   <%= render 'shared/footer' %>
 
 </body>
