@@ -33,13 +33,11 @@ gem "jbuilder"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
-gem 'simple_form'
+gem "simple_form"
 
-gem 'bootstrap', '~> 5.1.1'
+gem "bootstrap", "~> 5.2"
 
 gem "font-awesome-sass", "~> 6.1"
-
-gem "faker"
 
 gem "dotenv-rails"
 
