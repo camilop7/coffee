@@ -1,28 +1,17 @@
 <div class="big-card">
   <div class="row">
-    <div class="col-md-4">
-      <div class="small-card">
-        <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1695482480/IMG_0425_xtbfav.heic" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Roasters</p>
+    <% @roasters.each do |roaster| %>
+      <div class="col-md-4">
+        <div class="small-card">
+          <img src="<%= roaster.image_url %>" class="card-img-top" alt="...">
+          <div class="card-footer text-center py-4">
+            <p class="card-text mb-2"><%= roaster.name %></p>
+            <p class="card-text mb-2"><%= roaster.location %></p>
+            <!-- Add any other properties you want to display -->
+            <button class="btn btn-primary">View Details</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="small-card">
-        <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1695482480/IMG_0425_xtbfav.heic" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Farmers</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="small-card">
-        <img src="https://res.cloudinary.com/difj9msh3/image/upload/v1695482480/IMG_0425_xtbfav.heic" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Shops</p>
-        </div>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
