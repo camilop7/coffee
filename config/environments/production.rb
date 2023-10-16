@@ -30,14 +30,6 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
-  config.cloudinary = {
-    cloud_name: ENV['CLOUDINARY_CLOUD_NAME'],
-    api_key: ENV['CLOUDINARY_API_KEY'],
-    api_secret: ENV['CLOUDINARY_API_SECRET'],
-    enhance_image_tag: true,
-    static_file_support: Rails.env.production?
-  }
-
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
